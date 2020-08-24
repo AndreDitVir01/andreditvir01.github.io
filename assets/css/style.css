@@ -749,7 +749,7 @@ textarea::-ms-input-placeholder{
 }
 /*heading title all area*/
 .head_title{
-    padding-bottom: 7.143rem;
+    padding-bottom: 4.143rem;
     overflow: hidden;
 }
 .head_title h2{
@@ -1056,11 +1056,12 @@ About section style
 .about_bottom_content .about_bottom_item{}
 .ab_head{
     width:100%;
-    display: table;
 }
 .ab_head .ab_head_icon{
-    float: left;
-    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
 }
 .ab_head .ab_head_icon .icofont,
 .ab_head .ab_head_icon .icon{
@@ -1774,3 +1775,10 @@ ul.dash > li:before {
     width: 1em;
     margin-left: -1em;
 }
+
+div:not(.featured_slider) .featured_img img {
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 250px;
+    width: 100%;
+  }
