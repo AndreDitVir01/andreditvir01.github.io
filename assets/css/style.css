@@ -905,38 +905,38 @@ textarea::-ms-input-placeholder{
 
 
 @-webkit-keyframes object_two {
-    50% { -webkit-transform: translate(0,-65px) ; }
+    50% { -webkit-transform: translate(65px,-65px) ; }
 }
 
 @keyframes object_two {
     50% { 
-        transform: translate(0,-65px) ; 
-        -webkit-transform: translate(0,-65px) ; 
+        transform: translate(65px,-65px) ; 
+        -webkit-transform: translate(65px,-65px) ; 
     } 
 
 }
 
 @-webkit-keyframes object_three {
-    50% { -webkit-transform: translate(65px,-65px) ; }
+    50% { -webkit-transform: translate(65px,65px) ; }
 }
 
 @keyframes object_three {
     50% { 
-        transform: translate(65px,-65px) ;
-        -webkit-transform: translate(65px,-65px) ;
+        transform: translate(65px,65px) ;
+        -webkit-transform: translate(65px,65px) ;
     } 
 }
 
 @-webkit-keyframes object_four {
 
-    50% { -webkit-transform: translate(65px,0) ; }
+    50% { -webkit-transform: translate(-65px,65px) ; }
 
 }
 
 @keyframes object_four {
     50% { 
-        transform: translate(65px,0) ;
-        -webkit-transform: translate(65px,0) ;
+        transform: translate(-65px,65px) ;
+        -webkit-transform: translate(-65px,65px) ;
     } 
 
 }
