@@ -1796,3 +1796,10 @@ div:not(.featured_slider) .featured_img img {
     height: 100%;
     width: 250px;
 }
+
+.blog_item_img img {
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 250px;
+    width: 100%;
+}
