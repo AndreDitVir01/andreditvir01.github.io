@@ -1803,3 +1803,17 @@ div:not(.featured_slider) .featured_img img {
     height: 250px;
     width: 100%;
 }
+
+.navbar-brand img.logo-display{
+    object-fit: contain; /* Do not scale the image */
+    object-position: left; /* Center the image within the element */
+    height: 20px;
+    width: 100%;
+}
+
+.navbar-brand img.logo-scrolled{
+    object-fit: contain; /* Do not scale the image */
+    object-position: left; /* Center the image within the element */
+    height: 44px;
+    width: 100%;
+}
