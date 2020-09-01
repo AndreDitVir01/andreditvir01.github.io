@@ -1813,7 +1813,7 @@ div:not(.featured_slider) .featured_img img {
 
 .navbar-brand img.logo-scrolled{
     object-fit: contain; /* Do not scale the image */
-    object-position: left; /* Center the image within the element */
-    height: 44px;
+    object-position: center; /* Center the image within the element */
+    height: 46px;
     width: 100%;
 }
