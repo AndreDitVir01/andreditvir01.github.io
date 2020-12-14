@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Blog post | Initio - Free, multipurpose html5 template by GetTemplate</title>
+	<title>Andreditvirs's Blog</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	<link rel="shortcut icon" href="./assets/images/gt_favicon.png">
 	
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
@@ -49,7 +49,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategori <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="teknologi.html">Teknologi</a></li>
+							<li><a href="#">Teknologi</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -154,13 +154,13 @@
 							Git  mempunyai  sebuah host  untuk  menyimpan  perubahan  di  internet  sehingga project  bisa push  dan pull,  inilah  yang  disebut  dengan remote.  Penyedia  layanan  (remote)  pada git  ada GitHub, GitLab, BitBucket, dsb (setiap project bisa memiliki lebih dari satu remote).
 						</p>
 						<ul>
-							<li>$  git  remote  add  origin  https://github.com/paulboone/ticgit  untuk  menambahkan remote.</li>
-							<li>$ git remote -vuntuk melihat daftar remote.</li>
-							<li>$ git fetch origin untuk mengambil semua informasi pada remote origin.</li>
-							<li>$ git pull origin master untuk menarik informasi dari remote origin.</li>
-							<li>$ git push origin master untuk mengirimkan perubahan ke remote.</li>
-							<li>$ git remote rename origin github untuk mengubah nama remote.</li>
-							<li>$ git remote rm githubuntuk menghapus remote berdasarkan nama remote.</li>
+							<li><span class="badge bg-secondary">$  git  remote  add  origin  https://github.com/example/example-git</span>  untuk  menambahkan remote.</li>
+							<li><span class="badge bg-secondary">$ git remote -v</span> untuk melihat daftar remote.</li>
+							<li><span class="badge bg-secondary">$ git fetch origin</span> untuk mengambil semua informasi pada remote origin.</li>
+							<li><span class="badge bg-secondary">$ git pull origin master</span> untuk menarik informasi dari remote origin.</li>
+							<li><span class="badge bg-secondary">$ git push origin master</span> untuk mengirimkan perubahan ke remote.</li>
+							<li><span class="badge bg-secondary">$ git remote rename origin github</span> untuk mengubah nama remote.</li>
+							<li><span class="badge bg-secondary">$ git remote rm github</span> untuk menghapus remote berdasarkan nama remote.</li>
 						</ul>
 						<h3>Basic Branching</h3>
 						<p>
@@ -168,17 +168,17 @@
 						</p>
 						<p style="text-align: center;"><img alt="" src="assets/images/gitandgithub-3.jpg"></p>
 						<ul>
-							<li>$ git branch dev untuk membuat branch dev dan $ git checkout dev untuk berpindah ke branch dev atau dipersingkat dengan $ git checkout -b dev.</li>
-							<li>$ git merge hotfix untuk menggabungkan branch sekarang dengan branch hotfix.</li>
-							<li>$ git branch -d dev untuk menghapus branch dev di lokal.</li>
-							<li>$ git push origin --all untuk berbagi semua branch yang ada di lokal ke remote (biasanya dipakai waktu initial push ke remote).</li>
+							<li><span class="badge bg-secondary">$ git branch dev</span> untuk membuat branch dev dan <span class="badge bg-secondary">$ git checkout dev</span> untuk berpindah ke branch dev atau dipersingkat dengan $ git checkout -b dev.</li>
+							<li><span class="badge bg-secondary">$ git merge hotfix</span> untuk menggabungkan branch sekarang dengan branch hotfix.</li>
+							<li><span class="badge bg-secondary">$ git branch -d dev</span> untuk menghapus branch dev di lokal.</li>
+							<li><span class="badge bg-secondary">$ git push origin --all</span> untuk berbagi semua branch yang ada di lokal ke remote (biasanya dipakai waktu initial push ke remote).</li>
 						</ul>
 						<h4>Distributed Workflow</h4>
 						<p>
-							Hal   ini   membahas   tentang   bagaimana berkontribusi source code ke dalam projectdengan  sukses,  membuat  semudah  mungkin bagi kontributor dan pengelola project serta mengelola project  secara  sukses  dengan banyak kontributor.  Contoh  ada  dua  orang kontributor  di  dalam project  (ComputerAdan B)  sedang  bekerja  secara  bersamaan. ComputerA  sudah  melakukan push  ke remote, maka Computer B harus melakukan rebasing sebelum push ke remote.
+							Hal   ini   membahas   tentang   bagaimana berkontribusi source code ke dalam projectdengan  sukses,  membuat  semudah  mungkin bagi kontributor dan pengelola project serta mengelola project  secara  sukses  dengan banyak kontributor.  Contoh  ada  dua  orang kontributor  di  dalam project  (Computer A dan B)  sedang  bekerja  secara  bersamaan. Computer A  sudah  melakukan push  ke remote, maka Computer B harus melakukan rebasing sebelum push ke remote.
 						</p>
-						<p style="text-align: center;"><img alt="" src="assets/images/gitandgithub-4.jpg"></p>
-						<p>Setiap kontributor   harus   memastikan   bahwa   dia   sedang mengerjakan project dengan source code yang terbaru dengan memakai $ git fetch origin dan $ git rebase origin/developmentmenjadi langkah awal sebelum melakukan pengerjaan project.</p>
+						<p style="text-align: center;"><img alt="" src="./assets/images/gitandgithub-4.jpg"></p>
+						<p>Setiap kontributor   harus   memastikan   bahwa   dia   sedang mengerjakan project dengan source code yang terbaru dengan memakai <span class="badge bg-secondary">$ git fetch origin</span> dan <span class="badge bg-secondary">$ git rebase origin/development</span>menjadi langkah awal sebelum melakukan pengerjaan project.</p>
 						
 						<h3>Github</h3>
 						<p>
@@ -188,7 +188,7 @@
 						<p>Dengan SSH key, melakukan interaksi dengan GitHub tidak perlu memberikan username dan password untuk setiap kali interaksi. Langkah-langkah generate SSH Key:</p>
 						<ol>
 							<li>Buka terminal (untuk Windows buka git bash).</li>
-							<li>Jalankan  perintah$  ssh-keygen  -t  rsa  -b  4096  -C  "your_email@example.com"  pada terminal untuk generate SSH Key baru.</li>
+							<li>Jalankan  perintah <span class="badge bg-secondary">$  ssh-keygen  -t  rsa  -b  4096  -C  "your_email@example.com"</span>  pada terminal untuk generate SSH Key baru.</li>
 							<li>> Generating public/private rsa key pair.</li>
 							<li>> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]</li>
 							<li>> Enter passphrase (empty for no passphrase): [Type a passphrase]</li>
@@ -197,9 +197,9 @@
 						<p>Menambahkan SSH Key kedalam account GitHub</p>
 						<ol>
 							<li>Login GitHub (jika belum login).</li>
-							<li>Buka terminal dan jalankan perintah $ cd .ssh dan $ cat [your file].pub kemudian copas isi dari file tersebut.</li>
+							<li>Buka terminal dan jalankan perintah <span class="badge bg-secondary">$ cd .ssh</span> dan <span class="badge bg-secondary">$ cat [your file].pub</span> kemudian copas isi dari file tersebut.</li>
 							<li>Klik icon  pada  pojok  kanan  atas  dan  pilih Settings,  kemudian  pada menu  disebelah  kiri pilih SSH and GPG Keys. Click New SSH Key untuk menambahkan SSH key, isikan judul sesuai kebutuhan dan copas ke kolom Key isi dari file sebelumnya.</li>
-							<li>Jalankan  perintah $  git  clone  git@github.com:abdur-rohman2883/kotlinconf-app.git pada terminal baru untuk memastikan bahwa SSH key sudah berjalan.</li>
+							<li>Jalankan  perintah <span class="badge bg-secondary">$  git  clone  git@github.com:example/example-git.git</span> pada terminal baru untuk memastikan bahwa SSH key sudah berjalan.</li>
 						</ol>
 						<h4>Cara kontribusi ke Dalam Suatu Proyek</h4>
 						<p>Cara Berkontribusi pada project yang sudah ada di dalam GitHub.</p>
