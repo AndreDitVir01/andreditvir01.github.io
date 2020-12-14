@@ -496,6 +496,11 @@ img {
 
 
 **********************************************************************/
+.code {
+  font-family: 'Consolas', Courier, monospace;
+  color: #333333;
+  background-color: rgb(196, 196, 196);
+}
 .section-title,
 .entry-title {
   display: block;

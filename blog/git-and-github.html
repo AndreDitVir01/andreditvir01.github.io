@@ -38,15 +38,18 @@
 		<div class="container-fluid">
 			
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> </button>
 			</div>
 			
 			<div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
 					<li><a href="../index.html">Beranda</a></li>
-					<li class="active"><a href="#">Blog</a></li>
-					<li class="dropdown">
+					<li><a href="./index.html">Blog</a></li>
+					<li class="dropdown" class="active">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategori <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Teknologi</a></li>
@@ -103,11 +106,11 @@
 						</p>
 						<p>
 							<ul>
-								<li>Instalasi git pada Linux Fedora bisa menggunakan $ yum install git, sedangkan pada Linux Ubuntu bisa menggunakan <span class="badge bg-secondary">$ sudo apt-get install git</span>.</li>
+								<li>Instalasi git pada Linux Fedora bisa menggunakan $ yum install git, sedangkan pada Linux Ubuntu bisa menggunakan <div class="code">>$ sudo apt-get install git</div>.</li>
 								<li>Instalasi git  pada MacOS  bisa  menggunakan $ brew install git  (pastikan  sudah  terinstal homebrew).</li>
 								<li>Instalasi git pada Windows bisa dengan mendownload installer git pada laman installer.</li>
 							</ul>
-							<p>Pastikan git  sudah  terinstal  dengan  menggunakan  perintah <span class="badge bg-secondary">$ git --version</span>,  maka  akan menampilkan pesan versi dari git.</p>
+							<p>Pastikan git  sudah  terinstal  dengan  menggunakan  perintah <div class="code">>$ git --version</div>,  maka  akan menampilkan pesan versi dari git.</p>
 						</p>
 						<h4>Pengaturan Awal</h4>
 						<p>
@@ -115,9 +118,9 @@
 						</p>
 						<p>
 							<ol>
-								<li>Jalankan  perintah <span class="badge bg-secondary">$  git  config  --global  user.name  “Your  name”,  contoh: $  git  config --global user.name “Nova Andre Saputra”</span></li>
-								<li>Jalankan  perintah <span class="badge bg-secondary">$  git  config  --global  user.email  “Your  email”,  contoh: $  git  config --global user.email “novaandre.saputraadit@mail.com”</span></li>
-								<li>Jalankan perintah <span class="badge bg-secondary">$ git config --list</span> untuk melihat hasil konfigurasinya.</li>
+								<li>Jalankan  perintah <div class="code">>$  git  config  --global  user.name  “Your  name”,  contoh: $  git  config --global user.name “Nova Andre Saputra”</div></li>
+								<li>Jalankan  perintah <div class="code">>$  git  config  --global  user.email  “Your  email”,  contoh: $  git  config --global user.email “novaandre.saputraadit@mail.com”</div></li>
+								<li>Jalankan perintah <div class="code">>$ git config --list</div> untuk melihat hasil konfigurasinya.</li>
 							</ol>
 						</p>
 						<h4>Repositori Git</h4>
@@ -126,8 +129,8 @@
 						</p>
 						<p>
 							<ol>
-								<li><span class="badge bg-secondary">$  git  init</span>  untuk  menginisialisasi repository  git  pada project,  kemudian  akan  membuat folder `.git` yang berisikan semua file repository yang akan dibutuhkan git</li>
-								<li><span class="badge bg-secondary">$  git  clone  https://github.com/example/example-git</span>   untuk   menduplikasi repository  yang  sudah  ada,  pada  perintah  tersebut  akan  menduplikasi project  sesuai dengan namanya dan di dalam project tersebut sudah terdapat folder `.git`.</li>
+								<li><div class="code">>$  git  init</div>  untuk  menginisialisasi repository  git  pada project,  kemudian  akan  membuat folder `.git` yang berisikan semua file repository yang akan dibutuhkan git</li>
+								<li><div class="code">>$  git  clone  https://github.com/example/example-git</div>   untuk   menduplikasi repository  yang  sudah  ada,  pada  perintah  tersebut  akan  menduplikasi project  sesuai dengan namanya dan di dalam project tersebut sudah terdapat folder `.git`.</li>
 							</ol>
 						</p>
 						<p>
@@ -136,31 +139,31 @@
 						<p style="text-align: center;"><img alt="" src="assets/images/gitandgithub-1.jpg"></p>
 						<p>
 							<ul>
-								<li><span class="badge bg-secondary">$ git status</span> untuk melihat adakah perubahan pada work directory dan file yang berada di untracked dan tracked.</li>
-								<li><span class="badge bg-secondary">$ git add 'nama_file'</span>  untuk mengubah status file / direktori menjadi staged.</li>
+								<li><div class="code">>$ git status</div> untuk melihat adakah perubahan pada work directory dan file yang berada di untracked dan tracked.</li>
+								<li><div class="code">>$ git add 'nama_file'</div>  untuk mengubah status file / direktori menjadi staged.</li>
 								<li>Mengabaikan file  atau  direktori  bilamana  terdapat  perubahan  di  dalamnya,  buat filedengan   nama   `.gitignore`   sebagai   contoh   tambahkan   `*.log`   dan   `build/`   untuk mengabaikan  perubahan  pada file  dengan  ekstensi log  dan folder  dengan  nama build(termasuk didalamnya).</li>
-								<li><span class="badge bg-secondary">$ git commit -m “message”</span>  untuk  memasukkan  data snapshot  ke  dalam database git, ubah `message` dengan pesan sesuai kebutuhan, sebagai contoh `initial commit`.</li>
+								<li><div class="code">>$ git commit -m “message”</div>  untuk  memasukkan  data snapshot  ke  dalam database git, ubah `message` dengan pesan sesuai kebutuhan, sebagai contoh `initial commit`.</li>
 							</ul>
 						</p>
-						<p>Melihat riwayat commit pada suatu project bisa dengan menggunakan perintah <span class="badge bg-secondary">$ git log</span> yang akan  menampilkan  dari commit  terbaru  sampai  ke commit  terdahulu  dan  ditambahkan beberapa pesan pendukung.</p>
+						<p>Melihat riwayat commit pada suatu project bisa dengan menggunakan perintah <div class="code">>$ git log</div> yang akan  menampilkan  dari commit  terbaru  sampai  ke commit  terdahulu  dan  ditambahkan beberapa pesan pendukung.</p>
 						<p style="text-align: center;"><img alt="" src="assets/images/gitandgithub-2.jpg"></p>
 						<p>Selama  proses  pengerjaan project  mungkin  ada  keinginan  untuk  mengulangi  perubahan fileyang  sudah  di commit  atau  yang  belum  di commit,  ada  beberapa  cara  untuk  mengulangi perubahan tersebut.</p>
 						<ul>
-							<li><span class="badge bg-secondary">$  git  commit  --amend  -m  “message”</span>  untuk  melakukan  perubahan commit  dan  nama pesan.</li>
-							<li><span class="badge bg-secondary">$ git reset HEAD `filename`</span> untuk menyetel ulang file tersebut (kembali ke untracked).</li>
-							<li><span class="badge bg-secondary">$ git checkout -- `filename`</span> untuk menyetel ulang file pada commit sebelumnya.</li>
+							<li><div class="code">>$  git  commit  --amend  -m  “message”</div>  untuk  melakukan  perubahan commit  dan  nama pesan.</li>
+							<li><div class="code">>$ git reset HEAD `filename`</div> untuk menyetel ulang file tersebut (kembali ke untracked).</li>
+							<li><div class="code">>$ git checkout -- `filename`</div> untuk menyetel ulang file pada commit sebelumnya.</li>
 						</ul>
 						<p>
 							Git  mempunyai  sebuah host  untuk  menyimpan  perubahan  di  internet  sehingga project  bisa push  dan pull,  inilah  yang  disebut  dengan remote.  Penyedia  layanan  (remote)  pada git  ada GitHub, GitLab, BitBucket, dsb (setiap project bisa memiliki lebih dari satu remote).
 						</p>
 						<ul>
-							<li><span class="badge bg-secondary">$  git  remote  add  origin  https://github.com/example/example-git</span>  untuk  menambahkan remote.</li>
-							<li><span class="badge bg-secondary">$ git remote -v</span> untuk melihat daftar remote.</li>
-							<li><span class="badge bg-secondary">$ git fetch origin</span> untuk mengambil semua informasi pada remote origin.</li>
-							<li><span class="badge bg-secondary">$ git pull origin master</span> untuk menarik informasi dari remote origin.</li>
-							<li><span class="badge bg-secondary">$ git push origin master</span> untuk mengirimkan perubahan ke remote.</li>
-							<li><span class="badge bg-secondary">$ git remote rename origin github</span> untuk mengubah nama remote.</li>
-							<li><span class="badge bg-secondary">$ git remote rm github</span> untuk menghapus remote berdasarkan nama remote.</li>
+							<li><div class="code">>$  git  remote  add  origin  https://github.com/example/example-git</div>  untuk  menambahkan remote.</li>
+							<li><div class="code">>$ git remote -v</div> untuk melihat daftar remote.</li>
+							<li><div class="code">>$ git fetch origin</div> untuk mengambil semua informasi pada remote origin.</li>
+							<li><div class="code">>$ git pull origin master</div> untuk menarik informasi dari remote origin.</li>
+							<li><div class="code">>$ git push origin master</div> untuk mengirimkan perubahan ke remote.</li>
+							<li><div class="code">>$ git remote rename origin github</div> untuk mengubah nama remote.</li>
+							<li><div class="code">>$ git remote rm github</div> untuk menghapus remote berdasarkan nama remote.</li>
 						</ul>
 						<h3>Basic Branching</h3>
 						<p>
@@ -168,17 +171,17 @@
 						</p>
 						<p style="text-align: center;"><img alt="" src="assets/images/gitandgithub-3.jpg"></p>
 						<ul>
-							<li><span class="badge bg-secondary">$ git branch dev</span> untuk membuat branch dev dan <span class="badge bg-secondary">$ git checkout dev</span> untuk berpindah ke branch dev atau dipersingkat dengan $ git checkout -b dev.</li>
-							<li><span class="badge bg-secondary">$ git merge hotfix</span> untuk menggabungkan branch sekarang dengan branch hotfix.</li>
-							<li><span class="badge bg-secondary">$ git branch -d dev</span> untuk menghapus branch dev di lokal.</li>
-							<li><span class="badge bg-secondary">$ git push origin --all</span> untuk berbagi semua branch yang ada di lokal ke remote (biasanya dipakai waktu initial push ke remote).</li>
+							<li><div class="code">>$ git branch dev</div> untuk membuat branch dev dan <div class="code">>$ git checkout dev</div> untuk berpindah ke branch dev atau dipersingkat dengan $ git checkout -b dev.</li>
+							<li><div class="code">>$ git merge hotfix</div> untuk menggabungkan branch sekarang dengan branch hotfix.</li>
+							<li><div class="code">>$ git branch -d dev</div> untuk menghapus branch dev di lokal.</li>
+							<li><div class="code">>$ git push origin --all</div> untuk berbagi semua branch yang ada di lokal ke remote (biasanya dipakai waktu initial push ke remote).</li>
 						</ul>
 						<h4>Distributed Workflow</h4>
 						<p>
 							Hal   ini   membahas   tentang   bagaimana berkontribusi source code ke dalam projectdengan  sukses,  membuat  semudah  mungkin bagi kontributor dan pengelola project serta mengelola project  secara  sukses  dengan banyak kontributor.  Contoh  ada  dua  orang kontributor  di  dalam project  (Computer A dan B)  sedang  bekerja  secara  bersamaan. Computer A  sudah  melakukan push  ke remote, maka Computer B harus melakukan rebasing sebelum push ke remote.
 						</p>
 						<p style="text-align: center;"><img alt="" src="./assets/images/gitandgithub-4.jpg"></p>
-						<p>Setiap kontributor   harus   memastikan   bahwa   dia   sedang mengerjakan project dengan source code yang terbaru dengan memakai <span class="badge bg-secondary">$ git fetch origin</span> dan <span class="badge bg-secondary">$ git rebase origin/development</span>menjadi langkah awal sebelum melakukan pengerjaan project.</p>
+						<p>Setiap kontributor   harus   memastikan   bahwa   dia   sedang mengerjakan project dengan source code yang terbaru dengan memakai <div class="code">>$ git fetch origin</div> dan <div class="code">>$ git rebase origin/development</div>menjadi langkah awal sebelum melakukan pengerjaan project.</p>
 						
 						<h3>Github</h3>
 						<p>
@@ -188,7 +191,7 @@
 						<p>Dengan SSH key, melakukan interaksi dengan GitHub tidak perlu memberikan username dan password untuk setiap kali interaksi. Langkah-langkah generate SSH Key:</p>
 						<ol>
 							<li>Buka terminal (untuk Windows buka git bash).</li>
-							<li>Jalankan  perintah <span class="badge bg-secondary">$  ssh-keygen  -t  rsa  -b  4096  -C  "your_email@example.com"</span>  pada terminal untuk generate SSH Key baru.</li>
+							<li>Jalankan  perintah <div class="code">>$  ssh-keygen  -t  rsa  -b  4096  -C  "your_email@example.com"</div>  pada terminal untuk generate SSH Key baru.</li>
 							<li>> Generating public/private rsa key pair.</li>
 							<li>> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]</li>
 							<li>> Enter passphrase (empty for no passphrase): [Type a passphrase]</li>
@@ -197,9 +200,9 @@
 						<p>Menambahkan SSH Key kedalam account GitHub</p>
 						<ol>
 							<li>Login GitHub (jika belum login).</li>
-							<li>Buka terminal dan jalankan perintah <span class="badge bg-secondary">$ cd .ssh</span> dan <span class="badge bg-secondary">$ cat [your file].pub</span> kemudian copas isi dari file tersebut.</li>
+							<li>Buka terminal dan jalankan perintah <div class="code">>$ cd .ssh</div> dan <div class="code">>$ cat [your file].pub</div> kemudian copas isi dari file tersebut.</li>
 							<li>Klik icon  pada  pojok  kanan  atas  dan  pilih Settings,  kemudian  pada menu  disebelah  kiri pilih SSH and GPG Keys. Click New SSH Key untuk menambahkan SSH key, isikan judul sesuai kebutuhan dan copas ke kolom Key isi dari file sebelumnya.</li>
-							<li>Jalankan  perintah <span class="badge bg-secondary">$  git  clone  git@github.com:example/example-git.git</span> pada terminal baru untuk memastikan bahwa SSH key sudah berjalan.</li>
+							<li>Jalankan  perintah <div class="code">>$  git  clone  git@github.com:example/example-git.git</div> pada terminal baru untuk memastikan bahwa SSH key sudah berjalan.</li>
 						</ol>
 						<h4>Cara kontribusi ke Dalam Suatu Proyek</h4>
 						<p>Cara Berkontribusi pada project yang sudah ada di dalam GitHub.</p>
