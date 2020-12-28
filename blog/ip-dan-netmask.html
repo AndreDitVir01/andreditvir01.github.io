@@ -82,17 +82,135 @@
 						<p>
 							Network ID adalah alamat dari jaringan komputer itu sendiri sedangkan Host ID adalah alamat dari suatu devices, misal computer, pada suatu jaringan komputer.
 						</p>
-						<h4>Pembagian IP Address</h4>
+						<h3>Pembagian IP Address</h3>
 						<br />
 						<p>
 							IP Address dibagi kedalam 5 kelas, yakni kelas A, B, C, D dan E. Berikut penjelasannya :
 						</p>
-						<h3>IP Address Kelas A</h3>
+						<h4>IP Address Kelas A</h4>
 						<p>
 							IP Address kelas A merupakan kelas IP Address yang ditujukan untuk jaringan komputer yang punya jumlah host yang sangat banyak. Range atau rentang oktet pertama untuk IP Address kelas A adalah antara 1-126. IP Address kelas A memiliki 8 bit biner untuk Network ID nya , dan 24 bit biner sisanya merupakan Host ID nya.
 						</p>
 						<p>Untuk lebih jelas nya, perhatikan karakteristik dari IP Address Kelas A berikut :</p>
-						
+						<ul>
+							<li>Oktet pertama di isi angka antara 1-126</li>
+							<li>Jumlah Network ID sebanyak 126</li>
+							<li>Jumlah Host ID sebanyak 16 juta-an pada masing-masing Network ID</li>
+							<li>1 bit biner pertama PASTI bernilai 0</li>
+							<li>Subnet Mask default dari IP Address Kelas A adalah 255.0.0.0</li>
+						</ul>
+						<img width="100%" src="../blog/assets/images/ip-dan-netmask-kelas-a.png" alt="">
+						<p style="text-align: center;"><sub>Tabel Karakteristik IP Address Kelas A</sub></p>
+						<p>
+							Contoh IP Address Kelas A : 10.100.85.2 <br />
+							Network ID dari IP tersebut adalah 10 dan Host ID nya adalah 100.85.2
+						</p>
+						<h4>IP Address Kelas B</h4>
+						<p>
+							IP Address kelas B merupakan kelas IP Address yang ditujukan untuk jaringan komputer skala sedang sampai besar. Range atau rentang oktet pertama untuk IP Address kelas B adalah antara 128-191. IP Address kelas C memiliki 16 bit biner untuk Network ID nya , dan 16 bit biner sisanya merupakan Host ID nya.
+						</p>
+						<p>Untuk lebih jelas nya, perhatikan karakteristik dari IP Address Kelas B berikut :</p>
+						<ul>
+							<li>Oktet pertama di isi angka antara 128-191</li>
+							<li>Jumlah Network ID sebanyak 16.384</li>
+							<li>Jumlah Host ID lebih dari 65 ribu pada masing-masing Network ID</li>
+							<li>2 bit biner pertama PASTI bernilai 10</li>
+							<li>Subnet Mask default dari IP Address Kelas B adalah 255.255.0.0</li>
+						</ul>
+						<img width="100%" src="../blog/assets/images/ip-dan-netmask-kelas-b.png" alt="">
+						<p style="text-align: center;"><sub>Tabel Karakteristik IP Address Kelas B</sub></p>
+						<p>
+							Contoh IP Address Kelas B : 167.64.77.2 <br />
+							Network ID dari IP tersebut adalah 167.77 dan Host ID nya adalah 77.2							
+						</p>
+						<h4>IP Address Kelas C</h4>
+						<p>
+							IP Address kelas C merupakan kelas IP Address yang ditujukan untuk jaringan komputer dengan jumlah host yang sedikit. Range atau rentang oktet pertama untuk IP Address kelas C adalah antara 192-223. IP Address kelas C memiliki 24 bit biner untuk Network ID nya , dan 8 bit biner sisanya merupakan Host ID nya.
+						</p>
+						<p>Untuk lebih jelas nya, perhatikan karakteristik dari IP Address Kelas C berikut :</p>
+						<ul>
+							<li>Oktet pertama di isi angka antara 192-223</li>
+							<li>Jumlah Network ID sebanyak 2.097.152</li>
+							<li>Jumlah Host ID sebanyak 254</li>
+							<li>3 bit biner pertama PASTI bernilai 110</li>
+							<li>Subnet Mask default dari IP Address Kelas C adalah 255.255.255.0</li>
+						</ul>
+						<img width="100%" src="../blog/assets/images/ip-dan-netmask-kelas-c.png" alt="">
+						<p style="text-align: center;"><sub>Tabel Karakteristik IP Address Kelas C</sub></p>
+						<p>
+							Contoh IP Address Kelas C : 220.168.100.1 <br />
+							Network ID dari IP tersebut adalah 220.168.100 dan Host ID nya adalah 1													
+						</p>
+						<h4>IP Address Kelas D</h4>
+						<p>
+							IP Address Kelas D merupakan kelas IP Address yang digunakan untuk keperluan multicast dari suatu jaringan komputer, multicast itu sendiri artinya pemakaian suatu aplikasi secara bersama-sama oleh beberapa komputer. Dalam IP Address Kelas D tidak ada yang namanya Network ID dan Host ID. Range atau rentang oktet pertama untuk IP Address kelas D adalah antara 224-247. 
+						</p>
+						<p>Untuk lebih jelas nya, perhatikan karakteristik dari IP Address Kelas D berikut :</p>
+						<ul>
+							<li>4 bit biner pertama PASTI bernilai 1110</li>
+						</ul>
+						<p>
+							Contoh IP Address Kelas D : 224.224.224.224 <br />
+							Tidak ada yang disebut Network ID maupun Host ID																		
+						</p>
+						<h4>IP Address Kelas E</h4>
+						<p>
+							IP Address Kelas E adalah kelas IP Address yang ditujukan untuk keperluan eksperimental, dengan kata lain IP Address Kelas E ini tidak bisa dipakai untuk keperluan umum. Range atau rentang oktet pertama untuk IP Address kelas E adalah antara 248-254. 4 bit biner pertama PASTI bernilai 1111 .
+						</p>
+						<h3>Apa itu subnetting?</h3>
+						<p>
+							Subnetting adalah teknik memecah suatu jaringan besar menjadi jaringan yang lebih kecil dengan cara mengorbankan bit Host ID pada subnet mask untuk dijadikan Network ID baru. Subnetting merupakan teknik memecah network menjadi beberapa subnetwork yang lebih kecil. Subnetting hanya dapat dilakukan pada IP addres kelas A, IP Address kelas B dan IP Address kelas C. Dengan subnetting akan menciptakan beberapa network tambahan, tetapi mengurangi  jumlah maksimum host yang ada dalam tiap network tersebut. Subnetting bertujuan untuk mengefisienkan alokasi IP Address dalam sebuah jaringan supaya bisa memaksimalkan penggunaan IP Address. Selain itu subnetting juga berfungsi untuk mengatasi masalah perbedaan hardware dan media fisik yang digunakan dalam suatu network, karena Router IP hanya dapat mengintegrasikan berbagai network dengan media fisik yang berbeda jika setiap network memiliki address network yang unik. Subnetting juga dapat meningkatkan security dan mengurangi terjadinya kongesti akibat terlalu banyaknya host dalam suatu network.
+						</p>
+						<h5>Diketahui sebuah IP address adalah 192.168.1.2/28 Tentukan : <br />a. Jumlah nilai subnet mask <br />b. Jumlah host <br />c. Jumlah subnet/network </h5>
+						<h5>Contoh kasus : <b>Scope IP Address</b></h5>
+						<h5>Jawab</h5>
+						<ul>
+							<li>Jumlah nilai Subnet Mask</li>
+							<p>
+								28 = 8 + 8 + 8 + 4 255.255.255.xxx (kelas C) 128 + 64 + 32 +16+0+0+0+0 = 240 Subnet Mask >> 255.255.255.240 
+							</p>
+							<li>Jumlah host </li>
+							<p>1 1 1 1 0 0 0 0 (n = 4) (2n)-2 = (24) <br /> 
+ 
+								2 = 16 <br /> 
+								2 = 14 host Jumlah Host = 14 host 
+							</p>
+							<li>Jumlah Subnet / network</li>
+							<p>
+								Rumus >> 24 = 16
+							</p>
+							<li>Scope IP Address </li>
+							<p>
+								0, 16, 32, 48, 64, 80, 96, …240
+							</p>
+							<p>
+								Jawab : <br />
+								Network 1 <br />
+								192.168.1.0/28 192.168.1.1 <br />
+								 – 
+								 192.168.1.14 192.168.1.15 (broadcast) <br /><br />
+								 
+								Network 2 <br />
+								192.168.1.16/28 192.168.1.17 <br />
+								 – 
+								 192.168.1.30 192.168.1.31 (broadcast) <br /><br />
+								 
+								Network 3 <br />
+								192.168.1.32/28 192.168.1.33 <br />
+								 – 
+								 192.168.1.46 192.168.1.47 (broadcast) <br /><br />
+								 
+								Network 4 <br />
+								192.168.1.48/28 192.168.1.49 <br />
+								 – 
+								 192.168.1.62 192.168.1.63 (broadcast) <br /><br />
+								 
+								Network 5 <br />
+								192.168.1.64/28 192.168.1.65 <br />
+								 – 
+								 192.168.1.78 192.168.1.79 (broadcast)						
+							</p>
+						</ul>
 					</div> 
 				</article><!-- #post-## -->
 			</div> 
