@@ -1,5 +1,5 @@
-[
-	{
+{
+	"carievent": [{
 		"id" : 1,
 		"title" : "PRE-REGISTRATION: DATA SCIENCE BOOTCAMP",
 		"body": "Buat kamu yang pernah ikutan kelas online DATA SCIENCE Fundamental atau kelas sejenis dan mau belajar DATA SCIENCE lebih dalam WAJIB IKUT \"DATA SCIENCE BOOTCAMP\" ini!\nAgendanya akan diadakan bulan Maret 2021 (Tanggalnya masih tentative, menunggu konfirmasi dari pematerinya)\nLink pendaftaran ini hanya pre-registrasi, info selanjutnya akan di share oleh mimin DILo Tangerang melalui whatsapp sekitar awal Maret 2021\nE-Sertifikat bakal dapet 2 (Untuk yang ikut seluruh rangkaian kegiatannya)\n- Yang pertama dari DILo Tangerang\n- Yang Kedua dari BISA AI\nYuk Daftarkan Diri Kamu Sekarang!",
@@ -58,5 +58,5 @@
 		"location": "DILo Tangerang",
 		"price": 0,
 		"image_url": "https://minio.dilo.id/event/74932b17-004a-4318-b286-9848821c3519.jpeg"
-	}
-]
+	}]
+}
