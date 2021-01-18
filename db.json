@@ -51,16 +51,6 @@
 			"price": 0,
 			"image_url": "https://minio.dilo.id/event/1b87469f-a6a0-4541-b0bd-248b9de69e62.png"
 		},
-		{
-			"id" : 6,
-			"title" : "Introduction of Blockchain",
-			"body": "Webinar DILo Tangerang x BISA AI #03 – Introduction of Blockchain\nBlockchain, sederhananya, adalah salah satu teknologi penyimpanan data yang menggunakan konsep ‘block’ yang berisi data dan ‘chain’ sebagai penghubung block diamankan oleh kriptografi. Dengan mengedepankan keamanan dan desentralisasi, teknologi ini menjadi sangat berguna khususnya untuk bidang perbankan dan keuangan.\nIkuti webinar DILo Tangerang x BISA AI kedua seputar blockhain untuk belajar lebih lanjut mengenai Blockchain, penerapan dan manfaat lainnya, bersama:\n- M. Octaviano Pratama, S.Kom, M.Kom\nChief Scientist BISA AI",
-			"date": "Sabtu, 06 February 2021",
-			"time": "02:00 PM - 04:00 PM",
-			"location": "DILo Tangerang",
-			"price": 0,
-			"image_url": "https://minio.dilo.id/event/74932b17-004a-4318-b286-9848821c3519.jpeg"
-		}
 	],
 	"terpopuler" :[
 		{
@@ -105,16 +95,6 @@
 		},
 		{
 			"id" : 5,
-			"title" : "LV Up Your Pitching Skills (part.1)",
-			"body": "Baca deskripsi berikut sampai habis sebelum mendaftar ya...\nAgenda LV UP Your Pitching Skills ini terdiri dari 2 bagian (daftar juga ya part.2 nya)\nTanggalnya masih tentative... karena acaranya masih lama juga, hehehe\nTAPI kamu bakal dapet info updatenya untuk tanggal pastinya jika sudah mendaftar\nOke sekian info dari mimin, silakan klik button dibawah untuk mendaftar...",
-			"date": "Sabtu, 06 February 2021",
-			"time": "02:00 PM - 04:00 PM",
-			"location": "DILo Tangerang",
-			"price": 0,
-			"image_url": "https://minio.dilo.id/event/1b87469f-a6a0-4541-b0bd-248b9de69e62.png"
-		},
-		{
-			"id" : 6,
 			"title" : "Introduction of Blockchain",
 			"body": "Webinar DILo Tangerang x BISA AI #03 – Introduction of Blockchain\nBlockchain, sederhananya, adalah salah satu teknologi penyimpanan data yang menggunakan konsep ‘block’ yang berisi data dan ‘chain’ sebagai penghubung block diamankan oleh kriptografi. Dengan mengedepankan keamanan dan desentralisasi, teknologi ini menjadi sangat berguna khususnya untuk bidang perbankan dan keuangan.\nIkuti webinar DILo Tangerang x BISA AI kedua seputar blockhain untuk belajar lebih lanjut mengenai Blockchain, penerapan dan manfaat lainnya, bersama:\n- M. Octaviano Pratama, S.Kom, M.Kom\nChief Scientist BISA AI",
 			"date": "Sabtu, 06 February 2021",
